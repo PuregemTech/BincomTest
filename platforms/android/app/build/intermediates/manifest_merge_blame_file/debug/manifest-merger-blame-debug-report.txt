@@ -1,0 +1,441 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bincomtestfirebaseexample.hello"
+4    android:hardwareAccelerated="true"
+5    android:versionCode="10000"
+6    android:versionName="1.0.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+13        android:anyDensity="true"
+13-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+14        android:largeScreens="true"
+14-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+15        android:normalScreens="true"
+15-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+16        android:resizeable="true"
+16-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+17        android:smallScreens="true"
+17-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+18        android:xlargeScreens="true" />
+18-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+20-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:24:5-81
+21-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:24:22-78
+22
+23    <queries>
+23-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:25:5-39:15
+24        <intent>
+24-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:26:9-28:18
+25            <action android:name="android.media.action.IMAGE_CAPTURE" />
+25-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:27:13-73
+25-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:27:21-70
+26        </intent>
+27        <intent>
+27-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:29:9-31:18
+28            <action android:name="android.intent.action.GET_CONTENT" />
+28-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:30:13-72
+28-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:30:21-69
+29        </intent>
+30        <intent>
+30-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:32:9-34:18
+31            <action android:name="android.intent.action.PICK" />
+31-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:33:13-65
+31-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:33:21-62
+32        </intent>
+33        <intent>
+33-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:35:9-38:18
+34            <action android:name="com.android.camera.action.CROP" />
+34-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:36:13-69
+34-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:36:21-66
+35
+36            <data
+36-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:37:13-73
+37                android:mimeType="image/*"
+37-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:37:19-45
+38                android:scheme="content" />
+38-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:37:46-70
+39        </intent>
+40    </queries>
+41
+42    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+42-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:40:5-81
+42-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:40:22-78
+43    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+43-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:41:5-79
+43-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:41:22-76
+44
+45    <uses-feature
+45-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:42:5-90
+46        android:name="android.hardware.location.gps"
+46-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:42:19-63
+47        android:required="true" />
+47-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:42:64-87
+48
+49    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+49-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:5-79
+49-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:22-76
+50    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+50-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:5-77
+50-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:22-74
+51    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+51-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:27:5-68
+51-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:27:22-65
+52    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+52-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:29:5-82
+52-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:29:22-79
+53    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+53-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:26:5-110
+53-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:26:22-107
+54    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+54-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\e3f14158bad590cf50c0bd32622dcdb3\transformed\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:25:5-79
+54-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\e3f14158bad590cf50c0bd32622dcdb3\transformed\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:25:22-76
+55
+56    <permission
+56-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+57        android:name="com.bincomtestfirebaseexample.hello.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+57-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+58        android:protectionLevel="signature" />
+58-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+59
+60    <uses-permission android:name="com.bincomtestfirebaseexample.hello.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+60-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+60-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+61    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+62    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+63    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+64    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+65    <!-- for Samsung -->
+66    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+67    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+68    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+69    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+70    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+71    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+72    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+72-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+73    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+73-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+74    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+74-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+74-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+75    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+75-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+75-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+76    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+76-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+76-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+77    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+77-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+77-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+78    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+78-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+78-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+79    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+79-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+79-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+80    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+80-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+80-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+81    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+81-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+81-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\PUREGEM\.gradle\caches\transforms-3\06029c06b159c9a65cc7253096faf8b8\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+82
+83    <application
+83-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:5:5-23:19
+84        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+84-->[androidx.core:core:1.9.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\00fa6d42e7a8abf6c20b774bd480ebc9\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+85        android:debuggable="true"
+86        android:extractNativeLibs="false"
+87        android:hardwareAccelerated="true"
+87-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+88        android:icon="@mipmap/ic_launcher"
+88-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:5:53-87
+89        android:label="@string/app_name"
+89-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:5:88-120
+90        android:supportsRtl="true" >
+90-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:5:121-147
+91        <activity
+91-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+92            android:name="com.bincomtestfirebaseexample.hello.MainActivity"
+92-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:229-256
+93            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+93-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:19-135
+94            android:exported="true"
+94-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:136-159
+95            android:label="@string/activity_name"
+95-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:160-197
+96            android:launchMode="singleTop"
+96-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:198-228
+97            android:theme="@style/Theme.App.SplashScreen"
+97-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:257-302
+98            android:windowSoftInputMode="adjustResize" >
+98-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:6:303-345
+99            <intent-filter android:label="@string/launcher_name" >
+99-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+99-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+100                <action android:name="android.intent.action.MAIN" />
+100-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+100-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+101
+102                <category android:name="android.intent.category.LAUNCHER" />
+102-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+102-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+103            </intent-filter>
+104        </activity>
+105
+106        <provider
+107            android:name="org.apache.cordova.camera.FileProvider"
+107-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:12:149-202
+108            android:authorities="com.bincomtestfirebaseexample.hello.cordova.plugin.camera.provider"
+108-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:12:19-88
+109            android:exported="false"
+109-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:12:89-113
+110            android:grantUriPermissions="true" >
+110-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:12:114-148
+111            <meta-data
+111-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:13:13-123
+112                android:name="android.support.FILE_PROVIDER_PATHS"
+112-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
+113                android:resource="@xml/camera_provider_paths" />
+113-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:13:75-120
+114        </provider>
+115
+116        <meta-data
+116-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:15:9-96
+117            android:name="firebase_analytics_collection_enabled"
+117-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:15:20-72
+118            android:value="true" />
+118-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:15:73-93
+119        <meta-data
+119-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:16:9-110
+120            android:name="google_analytics_automatic_screen_reporting_enabled"
+120-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:16:20-86
+121            android:value="true" />
+121-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:16:87-107
+122
+123        <service
+123-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:17:9-21:19
+124            android:name="by.chemerisuk.cordova.firebase.FirebaseMessagingPluginService"
+124-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:17:43-119
+125            android:exported="false" >
+125-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:17:18-42
+126            <intent-filter>
+126-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:18:13-20:29
+127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+127-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:19:17-78
+127-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:19:25-75
+128            </intent-filter>
+129        </service>
+130
+131        <meta-data
+131-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:22:9-123
+132            android:name="com.google.firebase.messaging.default_notification_channel_id"
+132-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:22:20-96
+133            android:value="default" />
+133-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:22:97-120
+134
+135        <receiver
+135-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:32:9-39:20
+136            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+136-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:33:13-78
+137            android:exported="true"
+137-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:34:13-36
+138            android:permission="com.google.android.c2dm.permission.SEND" >
+138-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:35:13-73
+139            <intent-filter>
+139-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:36:13-38:29
+140                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+140-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:17-81
+140-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:37:25-78
+141            </intent-filter>
+142        </receiver>
+143        <!--
+144             FirebaseMessagingService performs security checks at runtime,
+145             but set to not exported to explicitly avoid allowing another app to call it.
+146        -->
+147        <service
+147-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:45:9-52:19
+148            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+148-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:46:13-82
+149            android:directBootAware="true"
+149-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:47:13-43
+150            android:exported="false" >
+150-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:48:13-37
+151            <intent-filter android:priority="-500" >
+151-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:18:13-20:29
+152                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+152-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:19:17-78
+152-->C:\Users\PUREGEM\Bincom\mobile-app-development\BincomTest\platforms\android\app\src\main\AndroidManifest.xml:19:25-75
+153            </intent-filter>
+154        </service>
+155        <service
+155-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:53:9-59:19
+156            android:name="com.google.firebase.components.ComponentDiscoveryService"
+156-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:54:13-84
+157            android:directBootAware="true"
+157-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+158            android:exported="false" >
+158-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:55:13-37
+159            <meta-data
+159-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:56:13-58:85
+160                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+160-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:57:17-119
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\3b03b2c8dc0e2b3e45123e2124f9b033\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:58:17-82
+162            <meta-data
+162-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\e3f14158bad590cf50c0bd32622dcdb3\transformed\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
+163                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+163-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\e3f14158bad590cf50c0bd32622dcdb3\transformed\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.android.gms:play-services-measurement-api:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\e3f14158bad590cf50c0bd32622dcdb3\transformed\jetified-play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\cbf46bd49792586d329742c6b15cfa30\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+166                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+166-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\cbf46bd49792586d329742c6b15cfa30\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\cbf46bd49792586d329742c6b15cfa30\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+168            <meta-data
+168-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\PUREGEM\.gradle\caches\transforms-3\8171ebf77eb6f909a125ccc89f40aca0\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:28:13-30:85
+169                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+169-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\PUREGEM\.gradle\caches\transforms-3\8171ebf77eb6f909a125ccc89f40aca0\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:29:17-115
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-datatransport:18.1.5] C:\Users\PUREGEM\.gradle\caches\transforms-3\8171ebf77eb6f909a125ccc89f40aca0\transformed\jetified-firebase-datatransport-18.1.5\AndroidManifest.xml:30:17-82
+171        </service>
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\c5e360720ba739ac4f3aee72c0a68f40\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\c5e360720ba739ac4f3aee72c0a68f40\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\c5e360720ba739ac4f3aee72c0a68f40\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\c5e360720ba739ac4f3aee72c0a68f40\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+177
+178        <receiver
+178-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
+179            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+179-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
+180            android:enabled="true"
+180-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
+181            android:exported="false" >
+181-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
+182        </receiver>
+183
+184        <service
+184-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
+185            android:name="com.google.android.gms.measurement.AppMeasurementService"
+185-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
+186            android:enabled="true"
+186-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
+187            android:exported="false" />
+187-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
+188        <service
+188-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
+189            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+189-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
+190            android:enabled="true"
+190-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
+191            android:exported="false"
+191-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
+192            android:permission="android.permission.BIND_JOB_SERVICE" />
+192-->[com.google.android.gms:play-services-measurement:21.1.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\617ced098f015ce7c768427412d9af2f\transformed\jetified-play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
+193
+194        <provider
+194-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+195            android:name="com.google.firebase.provider.FirebaseInitProvider"
+195-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+196            android:authorities="com.bincomtestfirebaseexample.hello.firebaseinitprovider"
+196-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+197            android:directBootAware="true"
+197-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+198            android:exported="false"
+198-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+199            android:initOrder="100" />
+199-->[com.google.firebase:firebase-common:20.1.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\47ecaf595756d89fc1704cab122dcb8d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+200
+201        <meta-data
+201-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\781c59afd86639f972c08011789e87b1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+202            android:name="com.google.android.gms.version"
+202-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\781c59afd86639f972c08011789e87b1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+203            android:value="@integer/google_play_services_version" />
+203-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\781c59afd86639f972c08011789e87b1\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+204
+205        <provider
+205-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+206            android:name="androidx.startup.InitializationProvider"
+206-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+207            android:authorities="com.bincomtestfirebaseexample.hello.androidx-startup"
+207-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+208            android:exported="false" >
+208-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+209            <meta-data
+209-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+210                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+210-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+211                android:value="androidx.startup" />
+211-->[androidx.emoji2:emoji2:1.2.0] C:\Users\PUREGEM\.gradle\caches\transforms-3\6fdc55f959bbee2d273a043c0d1ba2a7\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+212            <meta-data
+212-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\6716cec235b31a478226e96836c42c67\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+213                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+213-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\6716cec235b31a478226e96836c42c67\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+214                android:value="androidx.startup" />
+214-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\PUREGEM\.gradle\caches\transforms-3\6716cec235b31a478226e96836c42c67\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+215        </provider>
+216
+217        <service
+217-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:29:9-35:19
+218            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+218-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:30:13-103
+219            android:exported="false" >
+219-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:31:13-37
+220            <meta-data
+220-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:32:13-34:39
+221                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:33:17-94
+222                android:value="cct" />
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\a8e814d1250e87f1a8946ba332d6fe2f\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:34:17-36
+223        </service>
+224        <service
+224-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:26:9-30:19
+225            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+225-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:27:13-117
+226            android:exported="false"
+226-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:28:13-37
+227            android:permission="android.permission.BIND_JOB_SERVICE" >
+227-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:29:13-69
+228        </service>
+229
+230        <receiver
+230-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:32:9-34:40
+231            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+231-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:33:13-132
+232            android:exported="false" />
+232-->[com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\PUREGEM\.gradle\caches\transforms-3\1b5d964295e2a30b74c23be7beac81ca\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:34:13-37
+233    </application>
+234
+235</manifest>
