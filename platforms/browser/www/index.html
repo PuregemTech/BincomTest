@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <platform name="android">
+            <resource-file src="google-services.json" target="app/google-services.json" />
+        </platform>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Test</title>
+    </head>
+    <body>
+        <!-- Home page -->
+        <div class="app-page" data-page="home">
+            <div class="app-topbar">
+                <div class="app-title">Home page</div>       
+            </div>
+            <div class="app-content cp">
+                <div class="app-section">
+                  <div class="app-button" data-target="create">Add New Incident</div>
+                </div>
+                <div class="home-c">
+                    <h2>You are welcome to Citizens Reporting Solution App</h2>
+                    <h4>Below are some of the recent incidents submitted by users:</h4>
+                    <div class="container pt-2" id="mainDiv"></div>
+                </div>
+            </div>
+        </div>    
+
+            <!-- Create Post page -->
+        <div class="app-page" data-page="create">
+            <div class="app-topbar">
+              <div class="app-button left" data-back data-autotitle></div>
+              <div class="app-title">Submit Incident page</div>
+            </div>
+            <div class="app-content">
+                <div class="createpost">
+                    <div class="app-content post-container">
+                        <div class="d-flex justify-content-center pt-2" id="spinner">
+                            <div class="spinner-border text-primary"></div>
+                        </div>
+                        <!-- <div class="container pt-2" id="mainDiv"></div> -->
+                        <div class="container">
+                            <h2>Submit an incident</h2>
+                            <form class="was-validated">
+                                <div class="form-group">
+                                    <label for="title">Category:</label>
+                                    <select id="incident">
+                                        <option> Accident </option>
+                                        <option> Fighting </option>
+                                        <option> Rioting  </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="content">Content:</label>
+                                    <textarea name="content" id="content" cols="30" rows="3" class="form-control" required> type your incident... </textarea>
+                                </div>
+                                <button type="submit" id="submitButton" class="btn btn-success">Submit</button>
+                                
+                                <div class="text-container">
+                                    <div class="text">Click Submit before clicking buttons below.</div>
+                                </div>
+                               
+                                <a href="#" onclick="event.preventDefault();" id= "cameraTakePicture" style="display: block; margin: 0 auto 1rem; text-align: center; text-decoration: none; padding-left: 0; padding-right: 0;">Take incident picture </a>
+                                <img id = "myImage" style="height: 200px; width: 100%;"></img>
+                                <div style="text-align: center;">
+                                    <h5 style="color: #4e4e4e;">Check incident Location</h5>
+                                    <a href="#" onclick="event.preventDefault();" id = "getPosition" style="display: block; text-align: center; text-decoration: none; padding-left: 0; padding-right: 0;">CURRENT POSITION</a>
+                                    <a href="#" onclick="event.preventDefault();" id = "watchPosition" style="display: block; text-align: center; text-decoration: none; padding-left: 0; padding-right: 0;">WATCH POSITION</a>
+                                </div>
+                 
+                            </form>
+                            
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/app.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="google-services.json"></script>
+    </body>
+</html>

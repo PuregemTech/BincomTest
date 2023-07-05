@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427988487968",
+    "project_id": "bincomtestnotification",
+    "storage_bucket": "bincomtestnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427988487968:android:57351b39e95001fac0d145",
+        "android_client_info": {
+          "package_name": "com.bincomtestfirebaseexample.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427988487968-5jt63v6acd2dms3or4igakjb5h05pbeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMTC0nXlN7Y_SfD6dS46toQfcfI3GRqlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427988487968-5jt63v6acd2dms3or4igakjb5h05pbeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

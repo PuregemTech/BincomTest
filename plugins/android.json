@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "ANDROIDX_CORE_VERSION": "1.6.+",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-firebase-analytics": {
+      "ANALYTICS_COLLECTION_ENABLED": "true",
+      "AUTOMATIC_SCREEN_REPORTING_ENABLED": "true",
+      "ANDROID_FIREBASE_BOM_VERSION": "30.3.1",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "ANDROID_FIREBASE_BOM_VERSION": "30.3.1",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    }
+  }
+}

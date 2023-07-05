@@ -1,0 +1,199 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseAnalytics\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseAnalyticsPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseMessaging\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<queries><intent><action android:name=\"android.media.action.IMAGE_CAPTURE\" /></intent><intent><action android:name=\"android.intent.action.GET_CONTENT\" /></intent><intent><action android:name=\"android.intent.action.PICK\" /></intent><intent><action android:name=\"com.android.camera.action.CROP\" /><data android:mimeType=\"image/*\" android:scheme=\"content\" /></intent></queries>",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.location.gps\" android:required=\"true\" />",
+              "count": 1
+            }
+          ],
+          "application": [
+            {
+              "xml": "<provider android:authorities=\"${applicationId}.cordova.plugin.camera.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"org.apache.cordova.camera.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/camera_provider_paths\" /></provider>",
+              "count": 1
+            }
+          ],
+          "/manifest/application": [
+            {
+              "xml": "<meta-data android:name=\"firebase_analytics_collection_enabled\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"google_analytics_automatic_screen_reporting_enabled\" android:value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<service android:exported=\"false\" android:name=\"by.chemerisuk.cordova.firebase.FirebaseMessagingPluginService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
+              "count": 1
+            },
+            {
+              "xml": "<meta-data android:name=\"com.google.firebase.messaging.default_notification_channel_id\" android:value=\"default\" />",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<preference name=\"AndroidXEnabled\" value=\"true\" />",
+              "count": 2
+            },
+            {
+              "xml": "<preference name=\"GradlePluginGoogleServicesEnabled\" value=\"true\" />",
+              "count": 2
+            },
+            {
+              "xml": "<preference name=\"GradlePluginGoogleServicesVersion\" value=\"4.3.13\" />",
+              "count": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "ANDROIDX_CORE_VERSION": "1.6.+",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-firebase-analytics": {
+      "ANALYTICS_COLLECTION_ENABLED": "true",
+      "AUTOMATIC_SCREEN_REPORTING_ENABLED": "true",
+      "ANDROID_FIREBASE_BOM_VERSION": "30.3.1",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "ANDROID_FIREBASE_BOM_VERSION": "30.3.1",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-camera.Camera",
+      "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "Camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverOptions",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverOptions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.camera",
+      "file": "plugins/cordova-plugin-camera/www/Camera.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "navigator.camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverHandle",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverHandle"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-analytics.FirebaseAnalytics",
+      "file": "plugins/cordova-plugin-firebase-analytics/www/FirebaseAnalytics.js",
+      "pluginId": "cordova-plugin-firebase-analytics",
+      "merges": [
+        "cordova.plugins.firebase.analytics"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-messaging.FirebaseMessaging",
+      "file": "plugins/cordova-plugin-firebase-messaging/www/FirebaseMessaging.js",
+      "pluginId": "cordova-plugin-firebase-messaging",
+      "merges": [
+        "cordova.plugins.firebase.messaging"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.geolocation",
+      "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+        "navigator.geolocation"
+      ]
+    },
+    {
+      "id": "cordova-plugin-geolocation.PositionError",
+      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-camera": "6.0.0",
+    "cordova-support-android-plugin": "2.0.4",
+    "cordova-plugin-firebase-analytics": "7.0.5",
+    "cordova-plugin-firebase-messaging": "7.0.4",
+    "cordova-plugin-geolocation": "4.1.0"
+  }
+}

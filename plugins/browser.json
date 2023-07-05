@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "true",
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-firebase-analytics": {
+      "ANALYTICS_COLLECTION_ENABLED": "true",
+      "AUTOMATIC_SCREEN_REPORTING_ENABLED": "true",
+      "PACKAGE_NAME": "com.bincomtestfirebaseexample.hello"
+    }
+  },
+  "dependent_plugins": {}
+}
